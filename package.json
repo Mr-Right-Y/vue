@@ -6,9 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist -r https://github.com/Mr-Right-Y/vue.git -b gh-pages"
   },
   "dependencies": {
+    "gh-pages": "^5.0.0",
     "vue": "^3.2.45",
     "vue-router": "^4.0.13"
   },
